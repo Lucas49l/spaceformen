@@ -1,0 +1,169 @@
+
+body { 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    background-color: #bbbbbb; 
+}
+
+.box {
+    width: 940px;
+    position: relative; 
+    margin: 0 auto; 
+}
+
+nav {
+    position: absolute; 
+    top: 126px; 
+    right: 0; 
+}
+
+nav li {
+    display: inline; 
+    margin: 0 0 0 15px; 
+}
+
+nav a {
+    text-transform: uppercase; 
+    color: #000000; 
+    text-decoration: none; 
+    font-weight: bolder; 
+    font-size: 22px;
+}
+
+nav a:hover { 
+    color: #c78c19; 
+    text-decoration: underline; 
+}
+
+#banner {
+    width: 100%; 
+}
+
+.principal {
+    padding: 3em 0; 
+    background-color: #fefefe; 
+    width: 940px; 
+    margin: 0 auto; 
+}
+
+#utensiliosimg {
+    width: 120px; 
+    float: left; 
+    margin: 0 20px 20px 0;
+}    
+
+.principal p {
+    margin-bottom: 1em; 
+}
+
+.principal strong { 
+    font-weight: bolder; 
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.titulo-principal {
+    text-align: center; 
+    font-size: 2em; 
+    margin: 0 0 1em;
+    clear:left; 
+    text-shadow: 10px 20px 5px  #000000; 
+}
+
+.mapa {
+    padding: 3em 0;
+    background:repeating-linear-gradient(#fefefe,#888888);
+}
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    padding: 3em 0 ; 
+    background-color: #888888; 
+}
+
+.conteudo-beneficio {
+    width: 640px; 
+    margin: 0 auto; 
+}
+
+.lista-beneficio {
+    width: 40%; 
+    display:inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:before {
+    content: "★"; 
+}
+
+
+.itens:nth-child(2n+1) { 
+    font-weight: bolder; 
+}
+
+#imgbeneficios {
+    width: 60%; 
+    opacity: 1; 
+    transition: 400ms;
+    box-shadow: 10px 10px 5px  #000000, -10px -10px 5px #c78c19; 
+}
+
+#imgbeneficios:hover{
+    opacity:0.3;
+    box-shadow: 60px 50px 5px 10px #000000, -60px -50px 10px #c78c19;
+}
+
+.video {
+    margin: 2em auto;
+    width: 560px; 
+}
+
+footer {
+    text-align: center; 
+    background-image: url(./bg.jpg); 
+    padding: 40px 0; 
+}
+
+.copy {
+    color: #ffffff ; 
+    font-size: 13px;
+    margin:20px 0 0 0;
+}
+
+
+@media screen and (max-width: 480px) { 
+    
+    .box, .principal, .mapa-conteudo, .conteudo-beneficio, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+    
+     .lista-beneficio, #imgbeneficios {
+        width: 100%;
+    }    
+}
